@@ -26,3 +26,10 @@ func (d deck) print() {
 	}
 }
 ```
+
+* to convert from a type to another -> typeWeWant(typeWeHave), example
+```go
+greeting := "Hi There!"
+
+[]byte(greeting) // converting a string to Slice of byte
+```
