@@ -13,4 +13,6 @@ func main() {
 	remainingCards.print()
 	fmt.Println("--------")
 	fmt.Println(cards.toString())
+
+	cards.saveToFile("my_cards")
 }
