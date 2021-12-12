@@ -9,16 +9,13 @@ func main() {
 	// card := "Ace of Spades"
 
 	// Slice
-	cards := []string{newCard(), newCard(), card, "Queen of Hearts"}
+	cards := deck{newCard(), newCard(), card, "Queen of Hearts"}
 	cards = append(cards, "Six of Spades")
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 
 	fmt.Println(card)
 	fmt.Println(anotherCard)
-	fmt.Println(cards)
 }
 
 // string here represents function's return type
