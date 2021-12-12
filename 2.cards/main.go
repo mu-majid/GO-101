@@ -15,4 +15,7 @@ func main() {
 	fmt.Println(cards.toString())
 
 	cards.saveToFile("my_cards")
+
+	newCardsFromFile := newDeckFromFile("my_cards")
+	fmt.Println(newCardsFromFile)
 }
