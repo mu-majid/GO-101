@@ -26,8 +26,8 @@ func main() {
 
 	marc.print()
 
-	marc.updateFname("Marco")
-
+	marcPointer := &marc
+	marcPointer.updateFname("Marco")
 	marc.print()
 
 	var julie person
@@ -41,8 +41,8 @@ func main() {
 
 }
 
-func (p person) updateFname(newFname string) {
-	p.firstName = newFname
+func (pointerToPerson *person) updateFname(newFname string) {
+	(*pointerToPerson).firstName = newFname
 }
 
 func (p person) print() {
