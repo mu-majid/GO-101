@@ -24,4 +24,7 @@ func main() {
 
 	fmt.Println(otherColors2)
 
+	for color, hex := range colors {
+		fmt.Println(color + " : " + hex)
+	}
 }
