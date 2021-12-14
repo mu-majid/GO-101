@@ -20,19 +20,23 @@ func main() {
 		lastName:  "Anderson",
 		contact:   contactInfo{email: "email", zipCode: 11122}}
 
-	fmt.Println(alex)
+	alex.print()
 
 	marc := person{"Marc", "Bill", contactInfo{email: "email", zipCode: 11122}}
 
-	fmt.Println(marc)
+	marc.print()
 
 	var julie person
 
-	fmt.Println(julie)
+	julie.print()
 
 	julie.firstName = "Julie"
 	julie.lastName = "Doe"
 
-	fmt.Println(julie)
+	julie.print()
 
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
 }
