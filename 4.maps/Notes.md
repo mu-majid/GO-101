@@ -1,0 +1,1 @@
+* Key  in maps should be of the same type, and also values should be of the same type.
