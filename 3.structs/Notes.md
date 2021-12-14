@@ -14,7 +14,12 @@ type person struct {
 	fmt.Printf("%+v", julie)
 
   /** OUTPUT
-  
+
   {firstName: "", age: 0, married: false}
   **/
 ```
+
+* Pointer operation:
+
+  - `&variable`: Give me the memory address of the value this variable is pointing at.
+  - `*pointer`: Give me the value this memory address is pointing at.
