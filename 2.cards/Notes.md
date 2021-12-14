@@ -17,6 +17,10 @@ func main() {
 * GO has two types of lists, namely, `Array` (Fixed length list of things), and `Slice` (An array that can grow or shrink)
 * Elements' datatype in the array or slice should be the same.
 * Note `sliceVar = append(sliceVar, "newElement")` will create a new slice and assign it to `sliceVar`, instead of modifying the old `sliceVar` slice.
+* Note: Slices are passed by reference in Go.
+* A slice is actually two data structure (under the hood in GO):
+  1. An Array
+  2. A Slice that keeps track of the array (holds -> ptr to head, capacity of array, length of the arr)
 
 * Receiver functions are used to set a method on avriable of a custom type. Like type `deck`, we defined this receiver func on it.
 ```go
