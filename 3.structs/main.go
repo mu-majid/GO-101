@@ -26,6 +26,10 @@ func main() {
 
 	marc.print()
 
+	marc.updateFname("Marco")
+
+	marc.print()
+
 	var julie person
 
 	julie.print()
@@ -35,6 +39,10 @@ func main() {
 
 	julie.print()
 
+}
+
+func (p person) updateFname(newFname string) {
+	p.firstName = newFname
 }
 
 func (p person) print() {
