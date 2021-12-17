@@ -1,0 +1,3 @@
+* Interfaces in GO are not generic types like in Java, ...
+* GO handles the linking between an interface and a concrete type that actually implements the interface.
+* we don't have to write boilerplate code like `implements`. This is both a blessing and curse.
